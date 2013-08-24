@@ -2,7 +2,7 @@ Parametered Controller Filter for Revel webframework
 ----------------
 
 With this Revel fitler, make it possible to define controller method that can be triggerred BEFORE
-or AFTER the Action be called, with all the parameters ready for use.
+or AFTER the specific Action be called, with all the parameters ready for use.
 
 The method will be binding with the parameters according to its signature. The signature of the filter method could 
 be different from defined on the Action.
@@ -12,7 +12,7 @@ via define this method on a 'parent' controller and define methods on each 'chil
 register the methods on 'child' for each controller.
 
 ### How to install 
-`go get github.com/arkxu/revel.filter`
+`go get github.com/arkxu/revel.ext`
 
 ### How to use
 
@@ -52,7 +52,7 @@ Register the filter:
   package app
 
   import (
-    "github.com/arkxu/revel.filter/filter"
+    "github.com/arkxu/revel.ext/filter"
     "github.com/robfig/revel"
   )
 
@@ -80,7 +80,7 @@ Add then register the method need to be called BEFORE or AFTER:
   package controllers
 
   import (
-    "github.com/arkxu/revel.filter/filter"
+    "github.com/arkxu/revel.ext/filter"
     "github.com/robfig/revel"
   )
 
